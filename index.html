@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <!-- <i class='bx bx-strikethrough'></i> -->
+        <a href="#" class="logo">Portfolio</a>
+        <i class='bx bx-menu' id="menu-icon"></i>
+        <!-- <i class='bx bxs-home' ></i>
+            <i class='bx bxs-info-circle'></i>
+            <i class='bx bxs-medal'></i>
+            <i class='bx bx-laptop' ></i>
+            <i class='bx bxs-phone' ></i> -->
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about" class="active">About</a>
+            <a href="#coding-profiles" class="active">Coding Profiles</a>
+            <a href="#projects" class="active">My Projects</a>
+            <a href="#contact" class="active">Contact Me</a>
+        </nav>
+    </header>
+
+    <!-- home section  -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hi, I am</h3>
+            <h1>Shuvam Pal</h1>
+            <h3>And I'm a <span>FrontEnd Developer</span></h3>
+            <p>Welcome to my portfolio! As a passionate and motivated undergraduate student, I am excited to share my journey of growth, creativity, and learning in the field of Information Technology. </p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/shuvam.pal.946"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/shuvam.264/"><i class='bx bxl-instagram-alt' ></i></a>
+                <a href="https://www.linkedin.com/in/shuvam-pal-71a223278/"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="home-img">
+            <img src="My_Photo_ai.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+             <div class="about-img">
+                <img src="My_Photo_about.png" alt="">
+                </div>
+                <div class="about-content">
+                    <h2 class="heading">About <span>Me</span></h2>
+                    <p>I am currently pursuing my Bachelor's degree in Information Technology. With a passion for technology and a drive to learn and innovate, I'm on a journey to explore the dynamic world of IT.I strongly believe in the power of collaboration and continuous learning.My goal is to contribute to the ever-evolving landscape of technology, leveraging the skills I've acquired and embracing the opportunities that lie ahead.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')"> Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Problem-Solving</span><br>Java</li>
+                            <li><span>Web-Development</span><br>HTML5, CSS, Javascript </li>
+                            <li><span>Languages</span><br>English, Bengali, Hindi</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Class X (WBBSE-2018)</span><br>Hartley Higher Secondary School</li>
+                            <li><span>Class XII (WBCHSE-2020)</span><br>Hartley Higher Secondary School </li>
+                            <li><span>Undergraduation (2024)</span><br>B.Tech-(IT) Meghnad Saha Intitute Of Technology</li>
+                        </ul>
+                    </div>
+
+
+                </div>
+               
+                
+            
+       
+    </section>
+
+    <!-- coding profiles section design  -->
+    <section class="coding-profiles" id="coding-profiles">
+        <h2 class="heading">Coding <span>Profiles</span></h2>
+          
+        <div class="profiles-container">
+            <div class="profiles-box">
+                <h3>Geeks For Geeks</h3>
+                <p>Solved 250+ Questions <br><br>Ranked Top 50 in College <br><br>Highest Streak of 50+days <br><br>700+ GFG Points</p>
+
+                <a href="https://auth.geeksforgeeks.org/user/shuvampal007/?" class="btn">Profile Link</a>
+            </div>
+
+            <div class="profiles-box">
+                <h3>HackerRank</h3>
+                <p>Solved 50+ Questions <br><br>5 star In Java <br><br>5 star in 30 Days of Code Challenge <br><br>2 star in Problem Solving</p>
+
+                <a href="https://www.hackerrank.com/shuvam_p_2003" class="btn">Profile Link</a>
+            </div>
+
+            <div class="profiles-box">
+                <h3>Leetcode</h3>
+                <p>Solved 50+ Questions <br><br>Ranked 178,660 in Global Contest <br><br>Participated in Multiple Leetcode Contests <br><br>Solved 20+ Medium Level Questions</p>
+
+                <a href="https://leetcode.com/shuvam264/" class="btn">Profile Link</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- project section design  -->
+
+    <section class="projects" id="projects">
+        <h2 class="heading">Latest <span>Projects</span></h2>
+        <div class="projects-container">
+            <div class="projects-box">
+               <img src="Text-speechconverter.png" alt="">
+               <div class="project-layer">
+                <h4>Text-Speech Converter</h4>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, non!
+
+                </p>
+                <a href="https://shuvamtext-speechconverter.netlify.app/"><i class='bx bx-link'></i></a>
+               </div>
+            </div>
+
+            <div class="projects-box">
+                <img src="analogclock1.png" alt="">
+                <div class="project-layer">
+                 <h4>Analog Clock</h4>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, non!
+ 
+                 </p>
+                 <a href="https://shuvamclock.netlify.app/"><i class='bx bx-link'></i></a>
+               
+                 
+                </div>
+             </div>
+
+             <div class="projects-box">
+                <img src="weatherapp.png" alt="">
+                <div class="project-layer">
+                 <h4>Weather App</h4>
+                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cupiditate, non!
+ 
+                 </p>
+                 <a href="https://shuvam-currentweatherapp.netlify.app/"><i class='bx bx-link'></i></a>
+                </div>
+             </div>
+        </div>
+    </section>
+
+      <!-- contact section design  -->
+
+
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer section design  -->
+
+    <footer class="footer">
+        <div class="footer-text">
+            <p>Copyright &copy; 2023 by Shuvam 🚀 | All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+
+</body>
+</html>
