@@ -56,7 +56,7 @@ ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.about-img, .profiles-container, .projects-box, .contact form', { origin:
      'bottom' });
 ScrollReveal().reveal('.home-content h1',{origin:'left' });
-ScrollReveal().reveal('.home-content p,.home-img, footer, .about-content',{origin:'right' });
+ScrollReveal().reveal('.home-content p,.home-img, .about-content',{origin:'right' });
 
 
 // Typed js 
@@ -67,3 +67,16 @@ const typed = new Typed('.multiple-text',{
     backDelay:1000,
     loop:true
 })
+
+//Preloader
+// window.addEventListener('load', () => {
+//     const preloader = document.querySelector('.preloader');
+//     preloader.classList.add('hide-preloader');
+//   });
+
+var loader=document.getElementById("preloader");
+const loadout = setTimeout(()=>{
+  loader.style.display="none";
+  document.body.style.overflow="unset";
+}, 3000);
+
